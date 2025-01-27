@@ -2,7 +2,7 @@ tag:
   - test
 task: varbench
 dataset_path: Columbia-NLP/VarBench
-dataset_name: VarBench
+dataset_name: default
 output_type: multiple_choice
 validation_split: validation
 test_split: test
