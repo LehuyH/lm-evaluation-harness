@@ -24,8 +24,8 @@ doc_to_text: "\
   A: The 1992 Olympics were held in Barcelona, Spain.\
   '%}\
   {{prompt_qa + '\n\nQ: ' + question + '\nA:'}}"
-doc_to_target: "{{ mc1_targets.values()|list|index(1) }}"  # Changed
-doc_to_choice: "{{ mc1_targets.keys()|list }}"  # Changed
+doc_to_target: "{{ (mc1_targets.values() | list).index(1) }}"
+doc_to_choice: "{{ mc1_targets.keys() | list }}"
 should_decontaminate: True
 doc_to_decontamination_query: "{{ question }}"  # Fixed templating
 metric_list:
